@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+     "allowSyntheticDefaultImports":true,
+    "baseUrl": "./",
+    "paths": {
+      "antd/es/*": ["components/*"],
+      "antd": ["components/index.ts"],
+
+
+
+    }
+  },
+  "include": [".dumirc.ts"]
+}
