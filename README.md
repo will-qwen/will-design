@@ -1,16 +1,9 @@
 # will 
 will 设计 react/ts 
 
-项目地址  https://will-qwen.github.io/will-design/components/overview
+项目地址  https://will-qwen.github.io/will-design
+
  
-
-## Usage
-
-TODO
-
-## Options
-
-TODO
 
 ## Development
 
