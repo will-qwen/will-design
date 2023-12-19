@@ -1,5 +1,6 @@
 // import { createStyles } from 'antd-style';
-import { useNavigate, useSidebarData } from 'dumi';
+import { useSidebarData } from 'dumi';
+
 import React, { useContext } from 'react';
 
 import SiteContext from '../SiteContext';
@@ -18,30 +19,28 @@ import SiteContext from '../SiteContext';
 // }));
 const Sidebar: React.FC = () => {
   // const { styles } = useStyles();
-
-  const { isMobile, theme } = useContext(SiteContext);
   const sidebarData = useSidebarData();
-  let navigate = useNavigate();
-
   console.log(sidebarData);
-  const handleClick = (link) => {
-    navigate(link);
-  };
-
+  const { isMobile, theme } = useContext(SiteContext);
+  // let navigate = useNavigate();
+  // const handleClick = (link) => {
+  //   navigate(link);
+  // };
   // const menuChild = sidebarData.map((item) => {
-  //   return <div>{item.title}</div>;
-  //   // return item.children.map((items) => {
-  //   //   return (
-  //   //     <div
-  //   //       onClick={() => {
-  //   //         handleClick(items.link);
-  //   //       }}
-  //   //     >
-  //   //       {items.title}
-  //   //     </div>
-  //   //   );
-  //   // });
+  //   return item.children.map((items) => {
+  //     return (
+  //       <div
+  //         onClick={() => {
+  //           handleClick(items.link);
+  //         }}
+  //       >
+  //         {items.title}
+  //       </div>
+  //     );
+  //   });
   // });
-  return isMobile ? <div></div> : <section> </section>;
+  return isMobile ? <div></div> : <section> 
+    
+  </section>;
 };
 export default Sidebar;

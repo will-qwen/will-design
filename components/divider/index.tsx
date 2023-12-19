@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 export interface DividerProps {
   children?: React.ReactNode;
   className?: string;
@@ -10,7 +9,6 @@ export interface DividerProps {
   type?: 'horizontal' | 'vertical';
   style?: React.CSSProperties;
 }
-
 const Divider: React.FC<DividerProps> = (props) => {
   const { type = 'horizontal', orientation = 'center',
   orientationMargin,
@@ -22,5 +20,8 @@ const Divider: React.FC<DividerProps> = (props) => {
   ...restProps
  } = props;
   return <></>;
-};
-export default Divider;
+};                                                          
+export default Divider; 
+
+
+
